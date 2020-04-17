@@ -58,3 +58,9 @@
 [submodule "smex"]
 	path = smex
 	url = https://github.com/nonsequitur/smex
+[submodule "counsel-projectile"]
+	path = counsel-projectile
+	url = https://github.com/ericdanan/counsel-projectile
+[submodule "zoom"]
+	path = zoom
+	url = https://github.com/cyrus-and/zoom
