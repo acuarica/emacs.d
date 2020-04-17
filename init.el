@@ -1,10 +1,10 @@
-(set-frame-font "Source Code Pro-14" nil t)
-(add-to-list 'initial-frame-alist '(fullscreen . maximized))
-(recentf-mode 1)
-(tool-bar-mode -1)
 (setq visible-bell t)
 (setq auto-save-default nil)
 (setq-default tab-width 2)
+(set-frame-font "Source Code Pro-14" nil t)
+(add-to-list 'initial-frame-alist '(fullscreen . maximized))
+(tool-bar-mode -1)
+(recentf-mode 1)
 
 (add-to-list 'load-path "~/.emacs.d/exec-path-from-shell")
 (require 'exec-path-from-shell)
@@ -85,6 +85,11 @@
 (add-to-list 'load-path "~/.emacs.d/gtm-emacs-plugin")
 (require 'git-time-metric)
 (add-hook 'after-save-hook 'git-time-metric-record)
+
+
+;; Keybindings
+
+(global-set-key (kbd "s-`") 'vterm-other-window) ;; removes other-frame
 
 ;; bind evil-args text objects
 (define-key evil-inner-text-objects-map "a" 'evil-inner-arg)
