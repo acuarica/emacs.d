@@ -6,64 +6,53 @@
 (tool-bar-mode -1)
 (recentf-mode 1)
 
-(add-to-list 'load-path "~/.emacs.d/exec-path-from-shell")
-(require 'exec-path-from-shell)
-(exec-path-from-shell-initialize)
+;; (add-to-list 'load-path "~/.emacs.d/exec-path-from-shell")
+;; (require 'exec-path-from-shell)
+;; (exec-path-from-shell-initialize)
 
 (add-to-list 'load-path "~/.emacs.d/emacs-libvterm")
 (require 'vterm)
 (setq vterm-kill-buffer-on-exit t)
 
-(add-to-list 'load-path "~/.emacs.d/emacs-which-key")
-(require 'which-key)
+(require 'which-key "~/.emacs.d/emacs-which-key/which-key.elc")
 (which-key-mode)
 
-(add-to-list 'load-path "~/.emacs.d/dash.el")
-(require 'dash)
+(require 'dash "~/.emacs.d/dash.el/dash.elc")
 
-(add-to-list 'load-path "~/.emacs.d/emacs-winum")
-(require 'winum)
+(require 'winum "~/.emacs.d/emacs-winum/winum.elc")
 (winum-mode)
 
-(add-to-list 'load-path "~/.emacs.d/undo-tree")
-(require 'undo-tree)
+(require 'undo-tree "~/.emacs.d/undo-tree/undo-tree.elc")
 (global-undo-tree-mode)
 
-(add-to-list 'load-path "~/.emacs.d/goto-chg")
-(require 'goto-chg)
+(require 'goto-chg "~/.emacs.d/goto-chg/goto-chg.elc")
 
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
 (evil-mode 1)
 
-(add-to-list 'load-path "~/.emacs.d/evil-surround")
-(require 'evil-surround)
+(require 'evil-surround "~/.emacs.d/evil-surround/evil-surround.elc")
 (global-evil-surround-mode 1)
 
 (add-to-list 'load-path "~/.emacs.d/evil-commentary")
 (require 'evil-commentary)
 (evil-commentary-mode)
 
-(add-to-list 'load-path "~/.emacs.d/evil-visualstar")
-(require 'evil-visualstar)
+(require 'evil-visualstar "~/.emacs.d/evil-visualstar/evil-visualstar.elc")
 (global-evil-visualstar-mode)
 
 (add-to-list 'load-path "~/.emacs.d/evil-matchit")
 (require 'evil-matchit)
 (global-evil-matchit-mode 1)
 
-(add-to-list 'load-path "~/.emacs.d/evil-exchange")
-(require 'evil-exchange)
+(require 'evil-exchange "~/.emacs.d/evil-exchange/evil-exchange.elc")
 (evil-exchange-install)
 
-(add-to-list 'load-path "~/.emacs.d/evil-args")
-(require 'evil-args)
+(require 'evil-args "~/.emacs.d/evil-args/evil-args.elc")
 
-(add-to-list 'load-path "~/.emacs.d/evil-numbers")
-(require 'evil-numbers)
+(require 'evil-numbers "~/.emacs.d/evil-numbers/evil-numbers.elc")
 
-(add-to-list 'load-path "~/.emacs.d/smex")
-(require 'smex)
+(require 'smex "~/.emacs.d/smex/smex.elc")
 (smex-initialize)
 
 (add-to-list 'load-path "~/.emacs.d/swiper")
@@ -78,14 +67,21 @@
 (require 'projectile)
 (projectile-mode 1)
 
+(add-to-list 'load-path "~/.emacs.d/counsel-projectile")
+(require 'counsel-projectile)
+(counsel-projectile-mode)
+
 (add-to-list 'load-path "~/.emacs.d/go-mode.el")
 (autoload 'go-mode "go-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
 
-(add-to-list 'load-path "~/.emacs.d/gtm-emacs-plugin")
-(require 'git-time-metric)
-(add-hook 'after-save-hook 'git-time-metric-record)
+;; (add-to-list 'load-path "~/.emacs.d/gtm-emacs-plugin")
+;; (require 'git-time-metric)
+;; (add-hook 'after-save-hook 'git-time-metric-record)
 
+;; (add-to-list 'load-path "~/.emacs.d/zoom")
+(require 'zoom "~/.emacs.d/zoom/zoom.elc")
+(zoom-mode)
 
 ;; Keybindings
 
