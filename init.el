@@ -2,7 +2,13 @@
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
 (recentf-mode 1)
 (tool-bar-mode -1)
+(setq visible-bell t)
 (setq auto-save-default nil)
+(setq-default tab-width 2)
+
+(add-to-list 'load-path "~/.emacs.d/exec-path-from-shell")
+(require 'exec-path-from-shell)
+(exec-path-from-shell-initialize)
 
 (add-to-list 'load-path "~/.emacs.d/emacs-libvterm")
 (require 'vterm)
@@ -56,6 +62,18 @@
 (add-to-list 'load-path "~/.emacs.d/evil-numbers")
 (require 'evil-numbers)
 
+(add-to-list 'load-path "~/.emacs.d/smex")
+(require 'smex)
+(smex-initialize)
+
+(add-to-list 'load-path "~/.emacs.d/swiper")
+(require 'ivy)
+(ivy-mode 1)
+(require 'counsel)
+(counsel-mode)
+(setq ivy-use-virtual-buffers t)
+(setq ivy-count-format "(%d/%d) ")
+
 (add-to-list 'load-path "~/.emacs.d/projectile")
 (require 'projectile)
 (projectile-mode 1)
@@ -63,6 +81,10 @@
 (add-to-list 'load-path "~/.emacs.d/go-mode.el")
 (autoload 'go-mode "go-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.go\\'" . go-mode))
+
+(add-to-list 'load-path "~/.emacs.d/gtm-emacs-plugin")
+(require 'git-time-metric)
+(add-hook 'after-save-hook 'git-time-metric-record)
 
 ;; bind evil-args text objects
 (define-key evil-inner-text-objects-map "a" 'evil-inner-arg)
