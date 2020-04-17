@@ -1,0 +1,9 @@
+[submodule "undo-tree"]
+	path = undo-tree
+	url = http://www.dr-qubit.org/git/undo-tree.git
+[submodule "goto-chg"]
+	path = goto-chg
+	url = https://github.com/emacs-evil/goto-chg
+[submodule "evil"]
+	path = evil
+	url = https://github.com/emacs-evil/evil
