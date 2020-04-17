@@ -46,3 +46,15 @@
 [submodule "evil-args"]
 	path = evil-args
 	url = https://github.com/wcsmith/evil-args
+[submodule "gtm-emacs-plugin"]
+	path = gtm-emacs-plugin
+	url = https://github.com/c301/gtm-emacs-plugin
+[submodule "swiper"]
+	path = swiper
+	url = https://github.com/abo-abo/swiper
+[submodule "exec-path-from-shell"]
+	path = exec-path-from-shell
+	url = https://github.com/purcell/exec-path-from-shell
+[submodule "smex"]
+	path = smex
+	url = https://github.com/nonsequitur/smex
