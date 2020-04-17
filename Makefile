@@ -1,6 +1,7 @@
 .PHONY: compile clean
 
-ELCS=undo-tree/undo-tree.elc \
+ELCS=emacs-libvterm/vterm.elc \
+     undo-tree/undo-tree.elc \
      goto-chg/goto-chg.elc \
      emacs-which-key/which-key.elc \
      emacs-winum/winum.elc \

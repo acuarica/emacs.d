@@ -14,6 +14,7 @@
 [submodule "emacs-libvterm"]
 	path = emacs-libvterm
 	url = https://github.com/akermu/emacs-libvterm
+	ignore = untracked
 [submodule "evil-numbers"]
 	path = evil-numbers
 	url = https://github.com/cofi/evil-numbers
