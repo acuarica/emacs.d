@@ -4,6 +4,7 @@
 [submodule "goto-chg"]
 	path = goto-chg
 	url = https://github.com/emacs-evil/goto-chg
+	ignore = untracked
 [submodule "evil"]
 	path = evil
 	url = https://github.com/emacs-evil/evil
@@ -37,6 +38,7 @@
 [submodule "evil-visualstar"]
 	path = evil-visualstar
 	url = https://github.com/bling/evil-visualstar
+	ignore = untracked
 [submodule "evil-matchit"]
 	path = evil-matchit
 	url = https://github.com/redguardtoo/evil-matchit
@@ -46,6 +48,7 @@
 [submodule "evil-args"]
 	path = evil-args
 	url = https://github.com/wcsmith/evil-args
+	ignore = untracked
 [submodule "gtm-emacs-plugin"]
 	path = gtm-emacs-plugin
 	url = https://github.com/c301/gtm-emacs-plugin
@@ -58,6 +61,7 @@
 [submodule "smex"]
 	path = smex
 	url = https://github.com/nonsequitur/smex
+        ignore = untracked
 [submodule "counsel-projectile"]
 	path = counsel-projectile
 	url = https://github.com/ericdanan/counsel-projectile
