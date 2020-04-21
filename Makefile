@@ -3,6 +3,7 @@
 ELCS=emacs-libvterm/vterm.elc \
      undo-tree/undo-tree.elc \
      goto-chg/goto-chg.elc \
+     dash.el/dash.elc \
      emacs-which-key/which-key.elc \
      emacs-winum/winum.elc \
      evil-surround/evil-surround.elc \
