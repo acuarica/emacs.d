@@ -1,6 +1,6 @@
 [submodule "undo-tree"]
 	path = undo-tree
-	url = http://www.dr-qubit.org/git/undo-tree.git
+	url = https://gitlab.com/tsc25/undo-tree
 [submodule "goto-chg"]
 	path = goto-chg
 	url = https://github.com/emacs-evil/goto-chg
